@@ -1,0 +1,16 @@
+{
+  "name": "patient-visit-tracker-root",
+  "version": "1.0.0",
+  "description": "Monorepo for Patient Visit Tracker application",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
